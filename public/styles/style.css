@@ -1,0 +1,169 @@
+body,
+h1,
+h2,
+p,
+a,
+input,
+button,
+textarea,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Categories styles */
+.categories {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Add book modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+}
+
+
