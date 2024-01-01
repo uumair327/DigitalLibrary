@@ -1,165 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>My Virtual Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>VIRTUAL LIBRARY</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Library</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">VIRTUAL LIBRARY</a>
-
-        <!-- Mobile menu button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#categories">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="add-book-btn">Add Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Contact/contact.html">Feedback</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Create-Account/create-account.html">Sign Up</a>
-            </li>
-          </ul>
-        </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for books..."
+        />
+        <button id="search-button">Search</button>
       </div>
-    </nav>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>VIRTUAL LIBRARY</h1>
-        </div>
-        <div class="col-md-4">
-          <div class="input-group">
-            <input type="text" class="form-control" id="search-input" placeholder="Search for books...">
-            <button class="btn btn-primary" id="search-button" type="button">Search</button>
-          </div>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <!-- <li><a href="#book-shelf">Books</a></li> -->
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#" id="add-book-btn">Add Book</a></li>
+
+          <!-- Admin-only option -->
+          <li><a href="Contact/contact.html">feedback</a></li>
+          <li><a href="Create-Account/create-account.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="book-shelf" class="book-shelf"></div>
+    </main>
+
+    <div id="categories" class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="books.html">Fiction</a></li>
+        <li><a href="#">Non-fiction</a></li>
+        <li><a href="#">Biography</a></li>
+        <li><a href="#">Children's books</a></li>
+      </ul>
+    </div>
+    <div id="add-book-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Add Book</h2>
+        <form>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author" required />
+
+          <label for="description">Description</label>
+          <textarea id="description" name="description"></textarea>
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-fiction</option>
+            <option value="biography">Biography</option>
+            <option value="children">Children's books</option>
+          </select>
+
+          <button type="submit">Add Book</button>
+        </form>
       </div>
     </div>
-  </header>
 
-  <main class="container mt-4">
-    <div id="book-container" class="row">
-      <!-- Book cards will be displayed here -->
-    </div>
-  </main>
+    
   
+  
+    <!-- <div class="book-card">
+      <img src="book1.jpg" alt="Book cover" />
+      <h2>The Great Gatsby</h2>
+      <p>by F. Scott Fitzgerald</p>
+      <p>Published in 1925</p>
+      <p>
+        A classic novel about the American Dream and the excesses of the Roaring
+        Twenties.
+      </p>
+      <button>Add to Cart</button>
+    </div> -->
+    <!-- <div class="cart">
+      <h2>Your Cart</h2>
+      <ul>
+        <li>Book 1 - Rs 100</li>
+        <li>Book 2 - RS 150</li>
+        <li>Book 3 - Rs 200</li>
+        <li>Book 4 - Rs 250</li>
+        <li>Book 5 - Rs 300</li>
+        <li>Book 6 - Rs 350</li>
+      </ul>
+      <p>Total: Rs 1350</p>
+      <button>Checkout</button>
+      <button class="close-button">&times;</button>
+    </div> -->
 
-  <div id="categories" class="container mt-4">
-    <h2>Categories</h2>
-    <div class="row">
-      <div class="col-md-3">
-        <a href="frontend/books.html" class="btn btn-secondary">Fiction</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#" class="btn btn-secondary">Non-fiction</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#" class="btn btn-secondary">Biography</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#" class="btn btn-secondary">Children's books</a>
-      </div>
-    </div>
-  </div>
+    <footer id="about-us">
+      <p>&copy; 2023 My Virtual Library</p>
+    </footer>
 
-  <div id="add-book-modal" class="modal">
-    <!-- Add your modal content here -->
-  </div>
-
-  <footer id="about-us" class="container mt-4">
-    <p>&copy; 2023 Virtual Library</p>
-  </footer>
-
-<!-- Include Firebase JavaScript SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-storage.js"></script>
-
-<script type="module">
-  // Import Firestore and Storage modules
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
-  import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-firestore.js";
-  import { getStorage, ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-storage.js";
-
-  // Initialize Firebase with your configuration
-    const firebaseConfig = {
-    apiKey: "AIzaSyBtkNrppkM3fVHAX21YNwhLxiJT_ePtzAI",
-    authDomain: "digitallibrary-4538e.firebaseapp.com",
-    projectId: "digitallibrary-4538e",
-    storageBucket: "digitallibrary-4538e.appspot.com",
-    messagingSenderId: "109490219130",
-    appId: "1:109490219130:web:014dc59401692db04733c3",
-    measurementId: "G-ZWW8SKFE6Y"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const firestore = getFirestore(app);
-  const storage = getStorage(app);
-
-  // Function to fetch and display books
-  async function displayBooks() {
-    const bookContainer = document.getElementById("book-container");
-
-    // Replace with your Firestore collection name
-    const collectionName = "books";
-
-    const querySnapshot = await getDocs(collection(firestore, collectionName));
-
-    querySnapshot.forEach(async (doc) => {
-      const bookData = doc.data();
-      // Convert storage paths to public URLs
-      const coverUrl = await getDownloadURL(ref(storage, bookData.coverUrl));
-      const pdfUrl = await getDownloadURL(ref(storage, bookData.pdfUrl));
-      const otherFileUrl = bookData.otherFileUrl ? await getDownloadURL(ref(storage, bookData.otherFileUrl)) : '';
-
-      const bookCard = createBookCard({ ...bookData, coverUrl, pdfUrl, otherFileUrl });
-      bookContainer.appendChild(bookCard);
-    });
-  }
-
-  // Function to create a book card
-  function createBookCard(bookData) {
-    const bookCard = document.createElement("div");
-    bookCard.className = "col-md-4 book-card";
-    bookCard.innerHTML = `
-      <div class="book-card">
-        <a href="${bookData.pdfUrl}" target="_blank">
-          <img src="${bookData.coverUrl}" alt="Book Cover">
-          <h3>Title: ${bookData.title}</h3>
-        </a>
-        <p>Description: ${bookData.description}</p>
-        <a href="${bookData.pdfUrl}" target="_blank">Read PDF</a>
-        ${bookData.otherFileUrl ? `<a href="${bookData.otherFileUrl}" target="_blank">Other Format</a>` : ''}
-      </div>
-    `;
-    return bookCard;
-  }
-
-  // Call the function to display books
-  displayBooks();
-</script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
