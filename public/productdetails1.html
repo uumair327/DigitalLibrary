@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> All Products-GadgetNet | Ecommerece Website Design</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+</div>
+
+<!-------------------Single Product Details-------------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/img1.jpg" width="100%" id="ProductImg">
+                
+            </div>
+            <div class="col-2">
+                <p>MOST SELLING BOOK</p>
+                <h1>AWAKENING THE THIRD EYE</h1>
+                <h4>BY SAMUEL SAGAN</h4>
+                <!-- <input type="number" value="1"> -->
+                <a href="open/open.html" class="btn">VIEW BOOK</a>
+                <h3>SUMMARY:-</h3>
+                <br>
+                <p>A step by step method to awaken the third eye and engage spiritual vision. A manual packed with practical information and techniques on spiritual vision, dowsing land energies, psychic sleep, perceiving acupuncture meridians, energetic protection and grounding. The book also presents a number of fundamental principles of the Clairvision techniques. 
+                   </p>
+                
+            </div>
+        </div>
+    </div>
+
+<!--------------Title--------------->
+
+<!--------------Products--------------->
+
+
+
+<!-------------------Footer------------------>
+
+
+<!-------js for product gallery--------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img")
+
+            SmallImg[0].onclick=function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick=function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick=function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick=function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+    </script>
+
+
+
+</body>
+</html>

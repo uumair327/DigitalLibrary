@@ -1,0 +1,468 @@
+.book-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-card h2 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.book-card p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-right: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-card h2 {
+  font-size: 1.2em;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.book-card p {
+  font-size: 1em;
+  margin: 5px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.categories {
+  margin: 10px;
+}
+
+.categories h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+.categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  margin: 5px 0;
+}
+
+.categories a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.categories a:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+.book-card p:first-of-type {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.book-card p:not(:first-of-type) {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.book-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cart {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  overflow-y: scroll;
+}
+
+.cart h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+.cart ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart li {
+  margin: 5px 0;
+}
+
+.cart button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cart p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.new-arrival {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.book-card .description {
+  display: none;
+  margin: 10px;
+  font-size: 0.9em;
+}
+
+.book-card .description.show {
+  display: block;
+}
+
+.cart .close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #ddd;
+}
+
+.search-bar button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #f00;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-bar button:hover {
+  background-color: #d00;
+}
+
+.book-card {
+  display: block;
+}
+
+.book-card[style*="none"] {
+  display: none;
+}
+
+.categories {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.categories h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 5px;
+}
+
+.categories a {
+  display: block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.categories a:hover {
+  background-color: #ccc;
+}
+
+#book-shelf {
+  background: url('wooden-shelf.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Book shelf */
+.book-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.book {
+  width: 120px;
+  height: 160px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .book-shelf {
+    max-width: 500px;
+  }
+
+  .book {
+    width: 80px;
+    height: 110px;
+  }
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
